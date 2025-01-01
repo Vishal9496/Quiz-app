@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Quiz app</title>
+</head>
+<body>
+     <!-- Main container for the quiz app -->
+     <div id="container">
+          <!-- Welcome section where the user inputs their name -->
+        <img src="./logo.jpg" alt="Logo" class="Logo">
+        <h1 class="welcome-note">Hello Learners!</h1>
+        
+        <h2 class="welcome-note">Enter your name to continue the Quiz</h2>
+        <!-- form to get the name of the user -->
+        <form onsubmit="getname(event)">
+            <input type="text" id="name-input">
+            <button type="submit" class="name-button">ENTER</button></form>
+            <p id="welcome-note"></p>
+            <P>you'll have each 15 seconds to answer each question</P>
+            <hr>
+            <!-- category selection -->
+            <h1 class="category-heading">Select Category</h1>
+            <button class="category-button" value="HTML" onclick="startQuiz(event)">HTML</button>
+            <button class="category-button" value="CSS" onclick="startQuiz(event)">CSS</button>
+            <button class="category-button" value="Javascript" onclick="startQuiz(event)">Javascript</button>
+            <button class="category-button" value="React" onclick="startQuiz(event)">React</button>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
